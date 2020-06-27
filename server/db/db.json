@@ -1,0 +1,38 @@
+{
+  "answers": [
+    "Alan Shearer",
+    "Didier Drogba",
+    "Thierry Henry",
+    "Robin van Persie",
+    "Dennis Bergkamp",
+    "Andrew Cole",
+    "Sergio Aguerro",
+    "Wayne Rooney",
+    "Robbie Fowler",
+    "Jermaine Defoe"
+  ],
+  "surveys": [
+    {
+      "email": "hhh@hhh.com",
+      "answer": "Didier Drogba"
+    },
+    {
+      "email": "hhh@hhh.com",
+      "answer": "Didier Drogba"
+    },
+    {
+      "email": "hhh@hhh.com",
+      "answer": "Didier Drogba"
+    },
+    {
+      "email": "hhh@hhh.com",
+      "answer": "Didier Drogba",
+      "comment": "What a winner"
+    },
+    {
+      "email": "hhh@hh.com",
+      "answer": "Didier Drogba",
+      "comment": "What a winner"
+    }
+  ]
+}
