@@ -1,3 +1,17 @@
-.App {
+.app {
+  margin: 1rem 10% 1rem 10%
+}
 
+.app-header {
+
+  h1 {
+    text-align: center;
+    color: darkblue;
+  }
+
+  .app-menu-button {
+    background: darkblue;
+    color: white;
+    margin-right: 1rem;
+  }
 }

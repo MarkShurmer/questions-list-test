@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@types/antd": "^1.0.0",
     "@types/jest": "^26.0.3",
     "jest": "^26.1.0",
     "parcel-bundler": "^1.12.4",

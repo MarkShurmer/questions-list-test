@@ -3,6 +3,10 @@ import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 import { App } from './App';
 
 describe('App', () => {
+    beforeAll(() => {
+        window.fetch = jest.fn().mockResolvedValue('');
+    });
+
     it('should default to displaying edit page', async () => {
         // setup
         render(<App />);

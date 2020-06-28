@@ -1202,6 +1202,13 @@
     "@babel/runtime" "^7.10.3"
     "@testing-library/dom" "^7.17.1"
 
+"@types/antd@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/antd/-/antd-1.0.0.tgz#f04e2a84efd9ea937366cd3dfbada5d3c949471d"
+  integrity sha1-8E4qhO/Z6pNzZs09+62l08lJRx0=
+  dependencies:
+    antd "*"
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.9"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.9.tgz#77e59d438522a6fb898fa43dc3455c6e72f3963d"
@@ -1435,7 +1442,7 @@ ansi-to-html@^0.6.4:
   dependencies:
     entities "^1.1.2"
 
-antd@^4.3.5:
+antd@*, antd@^4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/antd/-/antd-4.3.5.tgz#1bafbc2920a1b5266bcd46496532578b2fd0f98e"
   integrity sha512-C1qILCKh+G7q06wtm4uqmyvqzAzAaDKKzuTO0BO+rtUbSATjzbUg2Bp5byDEw0ThUGTWfJEQ0J7HZHh0FgiaJA==

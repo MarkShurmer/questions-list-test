@@ -2,8 +2,10 @@ const { getSurveys, addSurvey } = require('./survey');
 const getAnswers = require('./answers');
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const port = 3000;
 
 app.use(bodyParser.json());

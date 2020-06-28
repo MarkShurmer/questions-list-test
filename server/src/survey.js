@@ -14,7 +14,7 @@ function getSurveys(req, res) {
 function addSurvey(req, res) {
     const error = validateSurvey(req.body);
     if (error.length > 0) {
-        res.send(400, error);
+        res.status(400).send(error);
         return;
     }
 
@@ -23,7 +23,7 @@ function addSurvey(req, res) {
         db.get('surveys').push(req.body).write();
         res.sendStatus(200);
     } catch (err) {
-        res.send(500, 'Error saving survey');
+        res.status(500).send('Error saving survey');
     }
 }
 
