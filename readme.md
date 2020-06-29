@@ -1,4 +1,4 @@
-# Test
+# Survey Test
 
 This is split into a server and a client. The server is express and the client is react, using parcel to build.
 The server is in the server folder and the client is in the client folder. You will need to run them from their folder.
