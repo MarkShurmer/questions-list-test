@@ -55,7 +55,6 @@ const Survey = () => {
 
     const onChooseAnswer = (e: ChangeEvent<HTMLSelectElement>) => {
         e.preventDefault();
-        console.log('*** ', e.target.value);
         setAnswer(e.target.value);
         setError('');
     };

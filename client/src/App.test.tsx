@@ -1,30 +1,36 @@
+import '@testing-library/jest-dom/extend-expect';
 import React from 'react';
-import { render, fireEvent, waitFor, screen } from '@testing-library/react';
+import { render, fireEvent, screen, act } from '@testing-library/react';
 import { App } from './App';
 
 describe('App', () => {
     beforeAll(() => {
-        window.fetch = jest.fn().mockResolvedValue('');
+        window.fetch = jest.fn().mockResolvedValue({ json: () => [] });
     });
 
     it('should default to displaying edit page', async () => {
         // setup
-        render(<App />);
+        await act(async () => {
+            render(<App />);
+        });
 
         // verify
-        const editComponent = await screen.getByRole('form');
-        expect(editComponent).toBeDefined();
+        expect(await screen.getByRole('form')).toBeInTheDocument();
     });
 
     it('should change to displaying list page', async () => {
         // setup
-        render(<App />);
+        await act(async () => {
+            render(<App />);
+        });
 
         // action
-        fireEvent.click(screen.getByText('Results'));
+        await act(async () => {
+            fireEvent.click(screen.getByText('Results'));
+        });
 
         // verify
-        const resultComponent = await screen.getByRole('list');
+        const resultComponent = await screen.getByRole('survey-list');
         expect(resultComponent).toBeDefined();
     });
 });

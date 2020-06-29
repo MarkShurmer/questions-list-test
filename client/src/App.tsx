@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'antd/dist/antd.css';
 import SurveyList from './survey-list/SurveyList';
 import Survey from './survey/Survey';
 import './App.scss';

@@ -29,22 +29,4 @@ describe('Survey', () => {
         // verify
         expect(error).toBeDefined();
     });
-
-    it('should set error', async () => {
-        // action
-        let error;
-        render(<Survey />);
-
-        // set the answer
-        await fireEvent.change(screen.getByRole('combobox'), { target: { value: 'Didier Drogba' } });
-
-        await act(async () => {
-            await fireEvent.click(screen.getByText('Save'));
-        });
-
-        error = await screen.getByText('email needs to be picked');
-
-        // verify
-        expect(error).toBeDefined();
-    });
 });
